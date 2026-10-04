@@ -1,0 +1,359 @@
+{
+  "assets": [
+    {
+      "path": "assets/favicon.svg",
+      "role": "Project icon",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/acquisition-teaser.webp",
+      "role": "Perspective and pushbroom acquisition",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/projection-challenges.webp",
+      "role": "Circular dependency and footprint deformation",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/method-overview.webp",
+      "role": "PB-GS method overview",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/orthographic-products.webp",
+      "role": "Orthographic product generation",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/mapping-comparison.webp",
+      "role": "DSM and TDOM comparisons with original scales",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/mapping-comparison-preview.webp",
+      "role": "DSM and TDOM comparisons with original scales preview",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/district-context.webp",
+      "role": "District / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/district-pinhole.webp",
+      "role": "District / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/district-affine.webp",
+      "role": "District / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/district-static.webp",
+      "role": "District / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/district-rowwise.webp",
+      "role": "District / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/district-pbgs.webp",
+      "role": "District / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/district-gt.webp",
+      "role": "District / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/harbor-context.webp",
+      "role": "Harbor / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/harbor-pinhole.webp",
+      "role": "Harbor / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/harbor-affine.webp",
+      "role": "Harbor / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/harbor-static.webp",
+      "role": "Harbor / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/harbor-rowwise.webp",
+      "role": "Harbor / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/harbor-pbgs.webp",
+      "role": "Harbor / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/harbor-gt.webp",
+      "role": "Harbor / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-context.webp",
+      "role": "Center / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-pinhole.webp",
+      "role": "Center / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-affine.webp",
+      "role": "Center / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-static.webp",
+      "role": "Center / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-rowwise.webp",
+      "role": "Center / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-pbgs.webp",
+      "role": "Center / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-gt.webp",
+      "role": "Center / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/blocks-context.webp",
+      "role": "Blocks / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/blocks-pinhole.webp",
+      "role": "Blocks / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/blocks-affine.webp",
+      "role": "Blocks / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/blocks-static.webp",
+      "role": "Blocks / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/blocks-rowwise.webp",
+      "role": "Blocks / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/blocks-pbgs.webp",
+      "role": "Blocks / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/blocks-gt.webp",
+      "role": "Blocks / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/towers-context.webp",
+      "role": "Towers / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/towers-pinhole.webp",
+      "role": "Towers / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/towers-affine.webp",
+      "role": "Towers / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/towers-static.webp",
+      "role": "Towers / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/towers-rowwise.webp",
+      "role": "Towers / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/towers-pbgs.webp",
+      "role": "Towers / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/towers-gt.webp",
+      "role": "Towers / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/canyon-context.webp",
+      "role": "Canyon / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/canyon-pinhole.webp",
+      "role": "Canyon / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/canyon-affine.webp",
+      "role": "Canyon / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/canyon-static.webp",
+      "role": "Canyon / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/canyon-rowwise.webp",
+      "role": "Canyon / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/canyon-pbgs.webp",
+      "role": "Canyon / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/canyon-gt.webp",
+      "role": "Canyon / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/arena-context.webp",
+      "role": "Arena / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/arena-pinhole.webp",
+      "role": "Arena / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/arena-affine.webp",
+      "role": "Arena / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/arena-static.webp",
+      "role": "Arena / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/arena-rowwise.webp",
+      "role": "Arena / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/arena-pbgs.webp",
+      "role": "Arena / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/arena-gt.webp",
+      "role": "Arena / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/park-context.webp",
+      "role": "Park / context",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/park-pinhole.webp",
+      "role": "Park / pinhole",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/park-affine.webp",
+      "role": "Park / affine",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/park-static.webp",
+      "role": "Park / static",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/park-rowwise.webp",
+      "role": "Park / rowwise",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/park-pbgs.webp",
+      "role": "Park / pbgs",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/park-gt.webp",
+      "role": "Park / gt",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/table-ii-nvs.png",
+      "role": "Novel-view synthesis quality across eight scenes",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/table-iii-time.png",
+      "role": "Scene optimization time in minutes",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/table-iv-mapping.png",
+      "role": "TDOM and DSM evaluation",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/center-projection.png",
+      "role": "Native center projection geometry",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/footprint-construction.png",
+      "role": "Acquisition-dependent footprint along the scanning direction",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/gaussian-primitive.svg",
+      "role": "3D Gaussian and local axes, schematic derived from the native center projection",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/optimization-gaussians.jpg",
+      "role": "Original Gaussian primitives in the optimization diagram",
+      "public_approved": true
+    },
+    {
+      "path": "assets/images/optimization-view.jpg",
+      "role": "Original pushbroom image in the optimization diagram",
+      "public_approved": true
+    }
+  ]
+}

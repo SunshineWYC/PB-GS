@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <title>3D Gaussian with center mu and local coordinate axes</title>
+  <defs><marker id="axis-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#253b27"/></marker></defs>
+  <ellipse cx="120" cy="116" rx="101" ry="56" transform="rotate(-42 120 116)" fill="#cceabc" fill-opacity=".85"/>
+  <ellipse cx="120" cy="116" rx="101" ry="20" transform="rotate(-42 120 116)" fill="none" stroke="#91ba83" stroke-width="1.2" stroke-dasharray="5 5" opacity=".65"/>
+  <g stroke="#253b27" stroke-width="1.8" marker-end="url(#axis-head)"><path d="M120 116V52"/><path d="m120 116-45 53"/><path d="m120 116 58 15"/></g>
+  <circle cx="120" cy="116" r="3.5" fill="#253b27"/>
+  <g fill="#182f22" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-style="italic"><text x="92" y="108">μ</text><text x="128" y="54">z</text><text x="57" y="184">x</text><text x="181" y="144">y</text></g>
+  <text x="120" y="227" text-anchor="middle" fill="#142f41" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="25">3D Gaussian</text>
+</svg>

@@ -1,0 +1,29 @@
+<!-- Component library, not a public page. Copy selected modules into site/index.html.
+     Replace every {{TOKEN}}. Keep unique IDs when duplicating tab groups.
+     Packed comparison video: left half baseline, right half ours; equal size,
+     same camera, synchronized frames; total resolution 2W x H, even width.
+     Manual playback by default; add data-autoplay only when desired.
+-->
+<section id="video-results" class="section container">
+  <h2>{{VIDEO_SECTION_TITLE}}</h2>
+  <div class="tab-group" data-tabs>
+    <div class="scene-tabs" role="tablist" aria-label="Video scenes">
+      <button id="video-tab-a" role="tab" aria-selected="true" aria-controls="video-a" type="button">{{SCENE_A}}</button>
+      <button id="video-tab-b" role="tab" aria-selected="false" aria-controls="video-b" tabindex="-1" type="button">{{SCENE_B}}</button>
+    </div>
+    <div id="video-a" role="tabpanel" aria-labelledby="video-tab-a"><figure><video controls muted loop playsinline preload="none" poster="{{POSTER_A}}" src="{{VIDEO_A}}" aria-label="{{SCENE_A_DESCRIPTION}}"></video><figcaption>{{SCENE_A_OBSERVATION}}</figcaption></figure></div>
+    <div id="video-b" role="tabpanel" aria-labelledby="video-tab-b" hidden><figure><video controls muted loop playsinline preload="none" poster="{{POSTER_B}}" src="{{VIDEO_B}}" aria-label="{{SCENE_B_DESCRIPTION}}"></video><figcaption>{{SCENE_B_OBSERVATION}}</figcaption></figure></div>
+  </div>
+</section>
+<section id="video-comparison" class="section container">
+  <h2>{{DYNAMIC_COMPARISON_TITLE}}</h2>
+  <div class="video-comparison" data-video-comparison data-left-label="{{BASELINE_NAME}}">
+    <p>Left: {{BASELINE_NAME}} · Right: {{METHOD_NAME}}</p>
+    <div class="video-comparison-stage"><video controls muted loop playsinline preload="none" src="{{PACKED_VIDEO}}" poster="{{PACKED_VIDEO_POSTER}}" aria-label="{{VIDEO_DESCRIPTION}}"></video><canvas hidden aria-label="Video comparison divider"></canvas></div>
+    <div class="video-controls"><button class="button button-outline play-comparison" type="button" hidden>Play comparison</button></div>
+    <p class="status" role="status" aria-live="polite"></p>
+  </div>
+</section>
+<!-- Alternative to an HTML results table: original table screenshot + full view. -->
+<figure><a href="{{HIGH_RES_TABLE_IMAGE}}" data-lightbox><img src="{{TABLE_PREVIEW_IMAGE}}" width="{{WIDTH}}" height="{{HEIGHT}}" alt="{{TABLE_DESCRIPTION}}" loading="lazy"></a><figcaption>{{SHORT_SCIENTIFIC_OBSERVATION}}</figcaption></figure>
+<section id="efficiency" class="section container"><p class="eyebrow">Efficiency</p><h2>{{EFFICIENCY_HEADLINE}}</h2><p>{{COMPARISON_WITH_HARDWARE_UNITS_AND_SCOPE}}</p><!-- Insert verified evidence. --></section>
