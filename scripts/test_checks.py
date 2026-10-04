@@ -60,6 +60,17 @@ class ReleaseChecks(unittest.TestCase):
         subprocess.run(['git', 'add', 'materials/private.txt'], cwd=self.root, check=True)
         self.assertTrue(any('Private file is tracked' in x for x in self.errors()))
     @unittest.skipUnless(shutil.which('git'), 'Git is not installed')
+    def test_tracked_local_work_records_rejected(self):
+        subprocess.run(['git', 'init', '-q', '-b', 'main'], cwd=self.root, check=True)
+        for name in ['notes/review.md', 'docs/TEMPLATE_CHECK.md', 'prompts/00_START.md',
+                     'AGENTS.md', 'PROJECT_BRIEF.md', '.local-preview/check.json']:
+            with self.subTest(path=name):
+                path = self.root / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text('private fixture', encoding='utf-8')
+                subprocess.run(['git', 'add', '--', name], cwd=self.root, check=True)
+                self.assertIn('Private file is tracked: ' + name, self.errors())
+    @unittest.skipUnless(shutil.which('git'), 'Git is not installed')
     def test_parent_repository_rejected(self):
         parent = self.root / 'parent'; child = parent / 'project_page'; child.mkdir(parents=True)
         subprocess.run(['git', 'init', '-q', '-b', 'main'], cwd=parent, check=True)

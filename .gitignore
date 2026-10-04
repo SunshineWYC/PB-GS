@@ -3,6 +3,9 @@
 /notes/
 /PROJECT_BRIEF.md
 /.local-preview/
+/AGENTS.md
+/docs/
+/prompts/
 
 # Local tools, credentials, environments and temporary files
 /.codex/

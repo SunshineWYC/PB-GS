@@ -14,7 +14,8 @@ PUBLIC = ROOT / 'site'
 TOKEN = re.compile(r'\{\{[^{}]+\}\}')
 MEDIA = {'.png', '.jpg', '.jpeg', '.webp', '.gif', '.svg', '.ico', '.mp4', '.webm', '.woff2', '.pdf'}
 ALLOWED = MEDIA | {'.html', '.css', '.js', '.json', '.txt'}
-PRIVATE = ('materials/', 'notes/', '.local-preview/', '.codex/', '.env', 'PROJECT_BRIEF.md')
+PRIVATE = ('materials/', 'notes/', '.local-preview/', '.codex/', '.env',
+           'PROJECT_BRIEF.md', 'AGENTS.md', 'docs/', 'prompts/')
 
 class Page(HTMLParser):
     def __init__(self):
