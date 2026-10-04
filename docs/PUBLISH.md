@@ -1,27 +1,20 @@
-# PB-GS 仓库与后续发布
+# PB-GS 网站发布与维护
 
-当前仓库为 https://github.com/SunshineWYC/PB-GS 。
+仓库：https://github.com/SunshineWYC/PB-GS 。正式网站：https://sunshinewyc.github.io/PB-GS/ 。
 
-- `main`：默认分支，目前只有简短 README，供后续研究代码使用。
-- `project_page`：当前网站及维护文件，使用独立的初始提交，与 main 没有共同提交历史。
-- 不把网站分支合并到 main，不强推，不把 main 内容复制进网站分支。
+- `main`：默认分支，预留研究代码，与网站历史独立。
+- `project_page`：网站及维护文件；不要与 main 合并，不强推。
+- GitHub Pages 使用 GitHub Actions，工作流只上传 `./site`。
+- 推送 project_page 会触发发布；main 不参与网站发布。部署环境只允许 project_page 分支。
 
-本轮只授权建立分支和提交推送，没有启用 GitHub Pages。现有工作流只有手动入口，不会因本轮推送自动部署；正式 URL 及分享元数据尚未配置。
+## 修改和发布
 
-## 维护网站
+1. 核对当前分支为 project_page、origin 为 SunshineWYC/PB-GS，且没有未处理的本地修改。干净工作区可用 `git pull --ff-only origin project_page` 同步。
+2. 根据材料修改网页，本地预览并按变化范围验收；更新素材 manifest。私有 materials、notes、PROJECT_BRIEF.md、.local-preview 及本地工具配置始终忽略。
+3. 执行 `python scripts/check_site.py --release`。若更换正式 URL，同步 release.json、canonical、og:url 和分享图片绝对地址。
+4. 核对暂存差异和文件清单，确认没有原始论文或私有记录；在用户授权后提交并推送 project_page。
+5. 在 Actions 检查该提交的 Publish project page 成功，再核对正式网页及资源。部署成功与线上验证完成后，将提交、工作流 URL 和网站 URL 写入本地 notes/deployment.md。
 
-在当前目录或单独的 project_page 分支检出中工作。先确认 `git branch --show-current` 为 `project_page`，以及 origin 为上述仓库。工作区干净时使用 `git pull --ff-only origin project_page`；有本地改动先保留，不覆盖分歧。
+GitHub Pages 的 build_type 为 workflow，实际发布内容由上传的 Actions artifact 决定，不使用分支根目录直接发布。不要改成 Deploy from a branch，不要上传仓库根目录。
 
-只跟踪网站及必要维护文件。`materials/`、`notes/`、`PROJECT_BRIEF.md`、`.local-preview/` 和本地工具配置始终忽略；不上传论文全文，不把令牌写入任何文件。保留现有 Git 身份和凭据管理。
-
-修改后运行 `python scripts/check_site.py` 并按变化范围检查浏览器。提交前检查暂存差异、文件清单及私有路径；只推送 `project_page`。不要在含私有工作材料的当前目录切换到 main；研究代码使用单独检出。
-
-## 未来获授权后启用 Pages
-
-1. 核对 Pages 实际设置，确定正式 URL；在 release.json、canonical、og:url、分享图绝对地址中同步。不要把推导出的候选地址当成已上线地址。
-2. 运行 `python scripts/check_site.py --release`，并复查实际浏览器显示与素材公开范围。
-3. 使用 GitHub Actions 发布，上传路径必须为 `./site`，不能上传整个仓库根目录。
-4. 依据实际 Actions 发现情况，为 `project_page` 显式配置推送触发并启用 Pages；不要为手动入口可见性把工作流加到 main。空代码分支不负责网站部署。
-5. 只有远端目标提交、成功的部署工作流、正式 URL 和资源内容均核对通过后，才能报告上线。记录于本地 notes/deployment.md。
-
-遇到登录或权限错误时报告准确原因，使用正常 Git/GitHub 登录；不能因为读取仓库成功就假定能够推送，也不能以强推解决分歧。
+本目录保持 project_page；研究代码使用独立检出。保留既有 Git 身份和凭据。认证失败时使用正常登录，不索取聊天中的令牌；分歧通过分析与正常提交解决，不强推。回退使用 git revert 生成撤销提交并重新发布。

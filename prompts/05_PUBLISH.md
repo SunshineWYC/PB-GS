@@ -1,6 +1,6 @@
 # 发布已有 PB-GS 项目页
 
-以下提示词供未来明确授权部署时使用；本次上传仓库不等于执行部署。
+以下提示词供明确授权部署或后续发布时使用。现有 project_page 推送会触发 Pages；main 始终独立。
 
 请读取 AGENTS.md、docs/PUBLISH.md、release.json 和 notes/review.md，在 SunshineWYC/PB-GS 的 project_page 分支完成 GitHub Pages 配置和上线验证。main 保持独立，仅用于研究代码，不要合并两条历史。
 

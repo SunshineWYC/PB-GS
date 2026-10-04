@@ -1,5 +1,7 @@
 name: Publish project page
 on:
+  push:
+    branches: [project_page]
   workflow_dispatch:
 
 permissions:

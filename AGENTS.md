@@ -40,4 +40,4 @@ notes/review.md 记录结果、未决项和已接受的来源冲突。release.js
 
 - 仓库：SunshineWYC/PB-GS。main 预留研究代码，project_page 独立维护本项目页，两者不合并历史。
 - 本目录保持在 project_page；研究代码用独立检出。推送网站前核对当前分支和远端。
-- 本轮仓库上传授权不包括启用 Pages；部署需后续明确授权，发布目录始终为 site/。
+- 用户已授权启用 GitHub Pages；project_page 的推送会触发网站部署，发布目录始终为 site/。后续普通修改仍默认本地验收，明确授权推送/发布时再执行。

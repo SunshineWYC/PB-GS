@@ -30,6 +30,6 @@ git clone --single-branch --branch project_page https://github.com/SunshineWYC/P
 
 Raw papers, source charts, private project notes, and local review files are excluded from version control. Published website assets are limited to `site/`; preserve this directory boundary when configuring hosting.
 
-This upload does not enable GitHub Pages. The workflow has no automatic push trigger. Configure and verify hosting separately using [the publishing guide](docs/PUBLISH.md).
+The project website is available at [https://sunshinewyc.github.io/PB-GS/](https://sunshinewyc.github.io/PB-GS/). GitHub Actions deploys only `site/` when updates are pushed to `project_page`. The `main` branch is not involved in website deployment. See [the publishing guide](docs/PUBLISH.md) for checks and maintenance.
 
 The page retains the template attribution and licenses described in [NOTICE.md](NOTICE.md). Research materials retain their respective rights.
